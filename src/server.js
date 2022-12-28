@@ -11,9 +11,14 @@ const passport = require("passport");
 const MongoStore = require("connect-mongo")(session);
 
 // Load config
-require("dotenv").config({
-  path: `${__dirname}/config/config.env`,
-});
+// require("dotenv").config({
+//   path: `${__dirname}/config/config.env`,
+// });
+if (process.env.NODE_ENV !== "PRODUCTION") {
+  require("dotenv").config({
+    path: `${__dirname}/config/config.env`,
+  });
+}
 
 // Passport config
 require("./config/passport")(passport);
