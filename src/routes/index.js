@@ -22,7 +22,7 @@ router.get("/", ensureGuest, (req, res) => {
 
 // @desc Dashboard
 //  @route GET /dashboard
-router.get("/dashboard", ensureAuth, async (req, res) => {
+router.get("/dashboard",async (req, res) => {
   try {
     const questions = await Question.find({}).lean()
     res.render("dashboard", {
