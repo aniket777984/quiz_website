@@ -56,7 +56,9 @@ i.footer {
 
 
 .finished-main{
-  background-image: url(../img/school_coming_soon.jpg);
+  background-image: url(../img/rewind.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .main-body {
@@ -108,7 +110,7 @@ i.footer {
 /* For comming soon */
 
 .bgimg {
-  background-image: url("../img/school_coming_soon.jpg");
+  background-image: url("../img/rewind.jpg");
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -130,6 +132,13 @@ i.footer {
   transform: translate(-50%, -50%);
 }
 
+@media(max-width:700px){
+  .middle{
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
+
 .comsoon {
   margin: auto;
   width: 40%;
@@ -137,8 +146,7 @@ i.footer {
 
 .login-div {
   height: 100%;
-  /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../img/pixelBackground.png); */
-  background-image: url(../img/school_home.jpg);
+  background-image: url(../img/rewind.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,7 +160,7 @@ i.footer {
 }
 
 .finished-main {
-  height: 90vh;
+  height: 100vh;
 }
 
 .submit-button {

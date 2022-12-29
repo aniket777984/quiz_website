@@ -15,42 +15,27 @@
 
     <style>
 
-        .page-header{
-            background: #000;
-            border-bottom: 1px solid #fff;
-        }
-
-        .page-footer{
-            background-color: #000;
-            border-top: 2px solid #fff;
-            margin-bottom: 0px;
-        }
-        .footerend{
-            font-size: 20px;
-            text-align: center;
-            margin-bottom: -12px;
-            padding-bottom: 5px;
-            margin-top: -20px;
-        }
-
-        .middle{
-            background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
-            padding: 50px;
-        }
-        @media (max-width:700px){
-            .middle{
-                padding: 30px;
-            }
-        }
         .finished-main-tag{
             color: #fff;
             font-weight: 600;
             font-size: 50px;
         }
-        .middle h5{
+        .middleforend h5{
             color: #fff;
             font-weight: 600;
             margin-top: 30px;
+        }
+        .middleforend{
+            position: absolute;
+            /* background-color: rgba(232, 200, 86, 0.7); */
+            background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
+            border-radius: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 10px;
         }
 
     </style>
@@ -59,11 +44,8 @@
 </head>
 
 <body>
-    {{>_header2}}
-
         {{{body}}}
 
-    {{>_footer}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script>
