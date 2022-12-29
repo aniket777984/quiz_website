@@ -56,7 +56,7 @@ i.footer {
 
 
 .finished-main{
-  background-image: url(../img/rewind.jpg);
+  background-image: url(../img/rewind.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -110,7 +110,7 @@ i.footer {
 /* For comming soon */
 
 .bgimg {
-  background-image: url("../img/rewind.jpg");
+  background-image: url("../img/rewind.jpeg");
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -146,7 +146,7 @@ i.footer {
 
 .login-div {
   height: 100%;
-  background-image: url(../img/rewind.jpg);
+  background-image: url(../img/rewind.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
