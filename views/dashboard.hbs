@@ -1,10 +1,10 @@
 <div class="center-align">
     <div id="particles-js"></div>
-    <h3>Welcome, {{name}}!</h2>
-        <h5>Let's begin
-    </h3>
-    <h3 id="countdown">Time left:</h1>
-        <h2 id="demo"></h2>
+    <h3 class="username">Welcome, {{name}}!</h2>
+        <h5 class="letsbegin">Let's begin
+    </h5>
+    <h3 id="countdown">Time left:</h3>
+        <h4 id="demo" class="timeleft"></h4>
 </div>
 {{#if questions}}
 <form action="/submit" method="POST" id="form">
@@ -33,7 +33,8 @@
 
 <script>
 
-    let deadline = new Date("apr 10, 2021 10:30:00 GMT+05:30").getTime();
+    {{!-- Here the time is the last time to play means add 30 minutes to starting --}}
+    let deadline = new Date("dec 30, 2022 18:30:00 GMT+05:30").getTime();
 
     let x = setInterval(() => {
 

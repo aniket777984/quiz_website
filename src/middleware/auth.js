@@ -10,7 +10,16 @@ module.exports = {
   },
   ensureGuest: function (req, res, next) {
     if (req.isAuthenticated()) {
-      res.redirect("/dashboard");
+      if (
+        new Date().getTime() < new Date("dec 30, 2022 18:30:00 GMT+05:30").getTime()
+      ) 
+      {
+        res.redirect("/dashboard");
+      }
+      else
+      {
+        res.redirect("/finish");
+      }
     } else {
       return next();
     }

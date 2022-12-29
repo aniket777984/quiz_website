@@ -13,6 +13,10 @@ i.footer {
 
 .footer-copyright {
   color: #fff;
+  text-align: center;
+  margin-top: -40px;
+  padding-bottom: 5px;
+  font-size: 20px;
 }
 
 .page-footer,
@@ -21,6 +25,21 @@ i.footer {
 .page-header-login {
   background-color: #e68027;
 }
+
+
+.page-header-login{
+  background-color: #000;
+  position: fixed;
+  z-index: 100;
+  border-bottom: 1.5px solid #fff;
+}
+
+.brand-logo{
+  font-weight: 600;
+}
+
+
+
 
 @media (max-width: 500px) {
   .bgimg {
@@ -33,6 +52,11 @@ i.footer {
   /* width: 400px; */
   margin: 200px auto;
   text-align: center;
+}
+
+
+.finished-main{
+  background-image: url(../img/school_coming_soon.jpg);
 }
 
 .main-body {
@@ -53,6 +77,7 @@ i.footer {
 .desc {
   font-size: 18px !important;
   color: #fff;
+  font-weight: 600;
 }
 
 .ques-img {
@@ -78,6 +103,10 @@ i.footer {
   color: #fff;
 }
 
+
+
+/* For comming soon */
+
 .bgimg {
   background-image: url("../img/school_coming_soon.jpg");
   position: absolute;
@@ -93,7 +122,8 @@ i.footer {
 
 .middle {
   position: absolute;
-  background-color: rgba(232, 200, 86, 0.7);
+  /* background-color: rgba(232, 200, 86, 0.7); */
+  background: linear-gradient(90deg, rgb(88, 176, 184) 0%, rgba(16,62,255,1) 100%);
   border-radius: 10px;
   top: 50%;
   left: 50%;
@@ -107,7 +137,8 @@ i.footer {
 
 .login-div {
   height: 100%;
-  background-image: url("../img/school_home.jpg");
+  /* background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../img/pixelBackground.png); */
+  background-image: url(../img/school_home.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -121,11 +152,11 @@ i.footer {
 }
 
 .finished-main {
-  height: 80vh;
+  height: 90vh;
 }
 
 .submit-button {
-  background-color: #fa7400;
+  background-color: rgba(16,62,255,1);
 }
 
 .submit-button:hover {

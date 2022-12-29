@@ -2,17 +2,16 @@
     <div class="row">
         <div class="col s12 m12 l6">
             <div class="container login-container">
-                <div class="card orange accent-3 dark-text" id="signin-box">
+                <div class="card orange accent-3 dark-text signinbox" id="signin-box">
                     <div class="card-content">
-                        <h3>School Quiz</h3>
+                        <h2 class="about-title">Rewind Quiz</h2>
                         <div class="divider"></div>
                         <div class="section">
-                            <p>Welcome!</p>
+                            <p class="welcometext">Welcome!</p>
                         </div>
 
-
                         <div class="section">
-                            <a href="/auth/google" class="btn blue darken-1">
+                            <a href="/auth/google" class="btn auth-btn">
                                 <i class="fab fa-google left"></i> Sign In With Google</a>
                         </div>
                     </div>
@@ -21,25 +20,23 @@
         </div>
         <div class="col s12 m12 l6">
             <div class="container rules-container">
-                <div class="card orange accent-3 dark-text" id="rules-box">
+                <div  id="rules-box">
                     <div class="card-content center-align">
-                        <h3>Rules</h3>
-                        <div class="divider"></div>
+                        <h2 class="rules-title">Rules and Regulations</h2>
+                        {{!-- <div class="rules-divider"></div> --}}
                         <div class="section">
-                            <ul class="rules-body">
-                                <li>1. There are a total of 20 questions.</li>
-                                <li>2. You have 30 minutes to answer all the questions.</li>
-                                <li>3. All the questions will be shown on a single page. Answer all of them and press
-                                    the
-                                    submit button at the bottom of the page.</li>
+                            <ul class="rules-body rules-text">
+                                <li>1. There will be 20 questions based on the salient events of the year 2022.</li>
+                                <li>2.  The participants will get a total of 30 minutes to answer all the questions.</li>
+                                <li>3. The participants score +10 point for each correct answer. There is no negative marking for incorrect responses.</li>
                                 <li>
-                                    4. No negative marking.
+                                    4. The questions 3,7,11,15 will be star-marked. Those who answer them will be given priority in case of tie-breaker.
                                 </li>
                                 <li>5. Do not use any punctuation, commas, or extra words like 'a', 'or', 'and', etc.
                                     Keep spaces
                                     between words.</li>
-                                <li>6.A countdown timer will be shown on the page and once 30 minutes have elapsed, the
-                                    questions will be auto-submitted.</li>
+                                <li>6. The participants need to follow QuizInc on Facebook, Instagram and LinkedIn to be considered.</li>
+                                <li>7. The quiz begins at 6 PM on 30th December 2022.</li>
                             </ul>
                         </div>
                     </div>
